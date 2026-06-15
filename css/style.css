@@ -117,9 +117,8 @@ h1.logo{
   top: 0;
   left: 0;
   z-index: 999;
-  opacity: 0;
-  transition: left 0.4s ease-in-out;
-  visibility: hidden;   
+  transition: transform 0.6s ease-out;
+  transform: translateX(-100%);
 }
 
 .nav-area , .SNS-area {
@@ -144,11 +143,9 @@ hr{
   height: 1px;
 }
 
-/* クリックされたらハンバーガーメニューを表示させる */
+/* クリックされたらナビゲーションを表示させる */
 #hamburgermenu-navigation.active{
-  opacity: 1;
-  visibility: visible;
-  left: 0;
+  transform: translateX(0);
 }
 
 /* ページ全体を半透明の黒にする */
