@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneakers</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="images/favicon.svg">
+
+  <!-- スタイルシート -->
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <!-- WEBフォント -->
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'yij6sbe',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="logo">
+      <a href="index.html"><img src="images/logo.svg" alt="Sneakers"></a>
+    </h1>
+
+    <div class="hamburgermenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- ハンバーガーメニュのナビゲーション -->
+    <div id="hamburgermenu-navigation">
+      <div class="nav-area">
+        <ul class="nav-list">
+          <hr>
+          <li><a href="#pickup-wrap" class="hamburger-menu-section">PICK UP</a></li>
+          <hr>
+          <li><a href="#feature-wrap" class="hamburger-menu-section">FEATURE</a></li>
+          <hr>
+          <li><a href="#contact-wrap" class="hamburger-menu-section">CONTACT</a></li>
+          <hr>
+        </ul>
+      </div>
+
+      <div class="SNS-area">
+        <ul class="SNS-list">
+          <li><a href="https://x.com/">Twitter</a></li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://www.instagram.com/">instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- 背景が半透明の黒 -->
+    <div class="nav-overlay"></div>
+  </header>
+
+  <!-- メインビジュアル動画 -->
+  <div class="mainvisual-video">
+    <video src="images/video.mp4" autoplay loop muted playsinline></video>
+  </div>
+
+  <!-- pickupエリア -->
+  <div id="pickup-wrap">
+    <h2 class="pickup-h2">PICK UP</h2>
+    <div class="swiper my-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/pickup1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/pickup2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/pickup3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/pickup4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/pickup5.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/pickup1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/pickup2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/pickup3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/pickup4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/pickup5.jpg" alt=""></div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!-- featureエリア-->
+  <div id="feature-wrap">
+    <h2 class="feature-h2">FEATURE</h2>
+
+    <div class="grid-container">
+      <!-- カード１行目 -->
+      <div class="container1">
+        <article class="card-wrap">
+          <div class="card-image">
+            <img src="images/feature1.jpg" alt="">
+          </div>
+
+          <div class="card-body">
+            <p class="category-text">category</p>
+            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </article>
+
+        <article class="card-wrap">
+          <div class="card-image">
+            <img src="images/feature2.jpg" alt="">
+          </div>
+
+          <div class="card-body">
+            <p class="category-text">category</p>
+            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </article>
+
+        <article class="card-wrap">
+          <div class="card-image">
+            <img src="images/feature3.jpg" alt="">
+          </div>
+
+          <div class="card-body">
+            <p class="category-text">category</p>
+            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </article>
+      </div> 
+
+      <!-- カード２行目 -->
+      <div class="container2">
+        <article class="card-wrap">
+          <div class="card-image">
+            <img src="images/feature4.jpg" alt="">
+          </div>
+
+          <div class="card-body">
+            <p class="category-text">category</p>
+            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </article>
+
+        <article class="card-wrap">
+          <div class="card-image">
+            <img src="images/feature5.jpg" alt="">
+          </div>
+
+          <div class="card-body">
+            <p class="category-text">category</p>
+            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </article>
+
+        <article class="card-wrap">
+          <div class="card-image">
+            <img src="images/feature6.jpg" alt="">
+          </div>
+
+          <div class="card-body">
+            <p class="category-text">category</p>
+            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </article>
+      </div> 
+      
+      <!-- カード３行目 -->
+      <div class="container3">
+        <article class="card-wrap">
+          <div class="card-image">
+            <img src="images/feature7.jpg" alt="">
+          </div>
+
+          <div class="card-body">
+            <p class="category-text">category</p>
+            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </article>
+
+        <article class="card-wrap">
+          <div class="card-image">
+            <img src="images/feature8.jpg" alt="">
+          </div>
+
+          <div class="card-body">
+            <p class="category-text">category</p>
+            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </article>
+
+        <article class="card-wrap">
+          <div class="card-image">
+            <img src="images/feature9.jpg" alt="">
+          </div>
+
+          <div class="card-body">
+            <p class="category-text">category</p>
+            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="date">XXXX.XX.XX</p>
+          </div>
+        </article>
+      </div> 
+
+    </div>
+
+  </div>
+
+  <!--contactエリア -->
+  <div id="contact-wrap">
+    <h2 class="contact-h2">CONTACT</h2>
+
+    <div class="inner-section">
+      <div class="text-area">
+        <div class="contact-title">テキストテキストテキスト</div>
+        <p class="contact-text">
+        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br><br>
+        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
+      </div>
+
+      <div class="contact-form">
+        <form action="" method="post">
+          <div class="name-form">
+            <label for="name">Name:</label>
+            <input type="text" name="username">
+          </div>
+
+          <div class="mail-form">
+            <label for="mail">Mail:</label>
+            <input type="email" name="email">
+          </div>
+          
+          <div class="message-form">
+            <label for="message">Message:</label>
+            <textarea name="message-text" id="message-text"></textarea>
+          </div>
+
+          <div class="send-btn">
+            <button type="submit">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    
+  <footer class="footer">
+      <div class="credit">
+        © Sneakers
+      </div>
+    </footer>
+  <!-- Swiperの読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
