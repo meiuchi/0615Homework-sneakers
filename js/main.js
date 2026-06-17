@@ -43,11 +43,6 @@ const swiper = new Swiper('.my-slider', {
   slidesPerView: 2,           /* スマホ（基本）のときは1枚だけ見せる */
   spaceBetween:40,
   
-  // 左右の矢印を動かす設定
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
 
   // 自動再生の設定
   autoplay: {

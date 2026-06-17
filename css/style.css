@@ -73,15 +73,15 @@ h1.logo{
 }
 
 .hamburgermenu span:nth-child(1){
-  margin-top: 30px;
+  top: 30px;
 }
 
 .hamburgermenu span:nth-child(2){
-  margin-top: 38px;
+  top: 38px;
 }
 
 .hamburgermenu span:nth-child(3){
-  margin-top: 46px;
+  top: 46px;
 }
 
 .hamburgermenu:hover{
@@ -91,7 +91,8 @@ h1.logo{
 /* ─── 🍔 メニューが開いた時（.active がついた時）の動き ─── */
 /* 1本目の線：下に移動させてから、時計回りに135度回転 */
 .hamburgermenu.active span:nth-child(1){
-  top:8px;
+  top:50%;
+  transform:translateY(-50%) ;
   background: #fff;
   rotate: 135deg;
 }
@@ -103,9 +104,10 @@ h1.logo{
 
 /* 3本目 */
 .hamburgermenu.active span:nth-child(3){
+  top: 50%;
+  transform: translateY(-50%);
   background: #fff;
   rotate: -135deg;
-  top: -8px;
 }
 
 /* ナビゲーション */
@@ -134,7 +136,7 @@ h1.logo{
   font-size: 14.4px;
   line-height: 1.7em;
   font-weight: 300;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 hr{
@@ -198,12 +200,6 @@ hr{
   object-fit: cover;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  /* 💥 普通のcolorではなく、Swiper専用の「色の変数」を直接書き換える！ */
-  --swiper-navigation-color: #121212; /* 👈 ここに好きな色（例: 赤） */
-  --swiper-navigation-size: 30px;    
-}
 
 /* featureエリア */
 #feature-wrap{
@@ -211,17 +207,10 @@ hr{
 }
 
 .grid-container{
-  width: 90%;
-  margin: 30px auto;
-}
-
-.container1 , .container2 , .container3{
-  display: flex;
-  justify-content: space-around;
-}
-
-.container2 , .container3{
-  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 30px;
+  padding: 40px 30px 0;
 }
 
 .card-body{
@@ -229,7 +218,7 @@ hr{
 }
 
 .card-wrap{
-  width: 31%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 8px 4px #CCCCCC;
@@ -249,7 +238,7 @@ hr{
 }
 
 .card-text{
-  width: 84%;
+  width: 100%;
   text-align: left;
   padding: 20px 0px;
 }
@@ -372,6 +361,16 @@ button:hover {
   font-size: 24px;
   }
 
+  /* ヘッダー */
+  h1.logo{
+    margin-left: 20px;
+  }
+
+  /* ハンバーガーメニュー */
+  .hamburgermenu{
+    margin-right: 0;
+  }
+
   /* pickupエリア */
   #pickup-wrap,#feature-wrap{
     margin-top: 80px;
@@ -429,9 +428,6 @@ button:hover {
     margin-top: 90px;
     padding: 80px 0px;
   }
-
-  
-
   
 
 }
